@@ -1,3 +1,7 @@
+# Following along with a tutorial
+
+This is just me following along with the relay.dev docs tutorial. Doing it in git as a reference for future me mainly.
+
 # Newsfeed Application Example
 
 The Relay application is designed to be used in conjunction with the Relay documentation to demonstrate the APIs, concepts, and principles of Relay and their use in building Relay applications.
