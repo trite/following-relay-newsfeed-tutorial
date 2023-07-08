@@ -8,6 +8,7 @@ import PosterDetailsHovercardContents from "./PosterDetailsHovercardContents";
 
 const PosterBylineFragment = graphql`
   fragment PosterBylineFragment on Actor {
+    id
     name
     profilePicture {
       ...ImageFragment @arguments(width: 60, height: 60)
@@ -37,7 +38,7 @@ export default function PosterByline({ poster }: Props): React.ReactElement {
       />
       <div className="byline__name">{data.name}</div>
       <Hovercard targetRef={hoverRef}>
-        <PosterDetailsHovercardContents />
+        <PosterDetailsHovercardContents posterID={data.id} />
       </Hovercard>
     </div>
   );

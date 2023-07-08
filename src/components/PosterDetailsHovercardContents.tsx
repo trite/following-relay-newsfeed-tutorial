@@ -9,7 +9,7 @@ import type { PosterDetailsHovercardContentsBodyFragment$key } from "./__generat
 
 export const PosterDetailsHovercardContentsQuery = graphql`
   query PosterDetailsHovercardContentsQuery($posterID: ID!) {
-    node(id: "1") {
+    node(id: $posterID) {
       ... on Actor {
         ...PosterDetailsHovercardContentsBodyFragment
       }
